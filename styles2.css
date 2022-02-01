@@ -1,0 +1,208 @@
+:root {
+    --Softblue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --mainBG: hsl(217, 54%, 11%);
+    --cardBG: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+
+}
+
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  
+  
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  background-color: var(--mainBG);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Outfit', sans-serif;
+  
+}
+
+p{
+    font-size: 15px;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.card{
+    width: 18rem;
+    height: 30rem;
+    background-color: var(--cardBG);
+    border-radius: 10px;
+}
+
+.main-image{
+    
+    border-radius: 20px;
+    height: 55%;
+    width: 100%;
+    padding: 14px;
+}
+
+.heading{
+    color: var(--white);
+    font-size: 19px;
+    padding: 0px 14px;
+    margin: 0px;
+    position: relative;
+    bottom: 10px;
+}
+
+.info{
+    padding: 0px 14px;
+    color: var(--Softblue);
+    margin-top: 6px;
+}
+
+.priceTime{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 14px;
+    margin-top: 20px;
+}
+
+.price{
+    color: var(--cyan);
+    margin-left: 5px;
+    
+}
+.time{
+    color: var(--Softblue);
+    margin-left: 5px;
+
+}
+
+.priceimg,
+.timeimg{
+    width: 12px;
+    height: 18px;
+    position: relative;
+    top: 3px;
+}
+
+.left,
+.right{
+    display: flex;
+    
+
+}
+
+
+
+
+
+.creator{
+    display: flex;
+    margin: 22px 14px 0px 14px;
+    border-top: 1px solid var(--line);
+    padding: 7px;
+    
+}
+
+.whitecircle{
+    width: 31px;
+    height: 31px;
+    border-radius: 100%;
+    background-color: white;
+}
+
+.photo{
+    width: 29px;
+    height: 29px;
+    margin-left: 0px;
+    margin-right: 16px;
+    
+    
+}
+
+.cimage{
+    position: relative;
+    bottom: 30px;
+    left: 1px;
+}
+
+.name{
+  color: white;
+  margin-left: 2px;
+}
+
+.name:hover{
+  color: var(--cyan);
+}
+
+.heading:hover{
+  color: var(--cyan);
+}
+
+.main-image:hover{
+  background-color: var(--cyan);
+  background-image: url(./images/icon-view.svg);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  opacity: 40%;
+  z-index: -1;
+  
+
+}
